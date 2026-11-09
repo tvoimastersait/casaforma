@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f3f3f1">
+<meta name="description" content="TERRA CERAMICA — керамічна плитка та керамограніт для простору, який служить роками. Каталог, підбір і доставка.">
+<title>TERRA CERAMICA — бруківка, що формує простір</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f4f0;--paper:#fff;--ink:#322d29;--muted:#777a75;--line:#e6ded5;--dark:#403b36;--soft:#eee9e2;--radius:22px;--shadow:0 18px 55px rgba(28,30,27,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",sans-serif}button,input,select,textarea{font:inherit}button,a{-webkit-tap-highlight-color:transparent}a{color:inherit;text-decoration:none}.wrap{width:min(1180px,calc(100% - 44px));margin:auto}.topline{height:5px;background:var(--dark)}header{position:sticky;top:0;z-index:30;background:rgba(243,243,241,.88);backdrop-filter:blur(16px);border-bottom:1px solid rgba(32,33,31,.07)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:11px;font:800 20px Manrope,sans-serif;letter-spacing:.12em}.brand-mark{width:34px;height:34px;border-radius:11px;background:var(--dark);color:#fff;display:grid;place-items:center;font-size:18px}.navlinks{display:flex;align-items:center;gap:32px;color:#555852;font-size:13px}.navlinks a:hover{color:#111}.navright{display:flex;align-items:center;gap:12px}.cart{border:1px solid var(--line);background:#fff;border-radius:999px;padding:10px 16px;cursor:pointer;font-size:13px}.cart b{display:inline-grid;place-items:center;background:var(--dark);color:#fff;width:21px;height:21px;border-radius:50%;margin-left:7px;font-size:11px}.menu-btn{display:none;border:0;background:none;font-size:24px}
+.hero{padding:66px 0 70px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1fr .95fr;align-items:center;gap:48px}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--muted);font-size:11px;font-weight:700;letter-spacing:.17em;text-transform:uppercase}.eyebrow:before{content:"";width:24px;height:1px;background:#999}.hero h1{font:800 clamp(42px,5.6vw,74px)/1.04 Manrope,sans-serif;letter-spacing:-.055em;margin:23px 0 20px;max-width:640px}.hero h1 span{color:#888c85}.hero p{max-width:490px;color:#6e716b;font-size:16px;line-height:1.75;margin:0 0 30px}.btn{border:0;border-radius:999px;padding:15px 23px;background:var(--dark);color:white;font-weight:600;font-size:13px;display:inline-flex;align-items:center;gap:18px;cursor:pointer;transition:transform .25s,background .25s,box-shadow .25s}.btn:hover{transform:translateY(-3px);background:#454842;box-shadow:0 12px 25px #24262025}.btn .arrow{font-size:18px;line-height:10px}.hero-note{display:flex;align-items:center;gap:12px;margin-top:35px;color:#858780;font-size:12px}.avatars{display:flex}.avatars i{width:27px;height:27px;border:2px solid var(--bg);border-radius:50%;background:#b6b8b1;margin-left:-7px}.avatars i:first-child{margin:0;background:#777b72}.avatars i:nth-child(2){background:#c5bdb1}.avatars i:nth-child(3){background:#92968d}
+.hero-visual{height:490px;position:relative;border-radius:30px;overflow:hidden;background:#d5d6d1}.hero-visual img{width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(65%)}.hero-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 48%,#14151299)}.visual-caption{position:absolute;z-index:2;bottom:26px;left:28px;color:#fff}.visual-caption small{opacity:.7;letter-spacing:.15em;font-size:10px}.visual-caption strong{display:block;font:700 21px Manrope;margin-top:7px}.visual-index{position:absolute;right:25px;top:25px;z-index:2;color:white;font-size:11px;letter-spacing:.14em}
+.scroll-brick{position:fixed;z-index:40;top:88px;left:max(18px,calc((100vw - 1180px)/2 - 14px));font-size:40px;line-height:1;pointer-events:none;transform-origin:center;filter:drop-shadow(0 5px 8px #0002);will-change:transform}
+.stats{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:24px 0}.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.stat{display:flex;align-items:center;justify-content:center;gap:12px}.stat strong{font:800 25px Manrope;letter-spacing:-.04em}.stat span{max-width:110px;color:var(--muted);font-size:11px;line-height:1.4}
+.section{padding:100px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:36px}.kicker{color:#8b8e87;font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}.section h2{font:800 clamp(30px,4vw,48px)/1.1 Manrope;letter-spacing:-.045em;margin:12px 0 0}.section-intro{max-width:340px;color:var(--muted);font-size:13px;line-height:1.7;margin:0}
+.filters{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:15px;background:#e9eae6;border-radius:18px;margin-bottom:23px}.filter{border:1px solid #d9dad5;background:#f8f8f6;border-radius:999px;padding:10px 14px;color:#4f524c;font-size:12px;outline:none}.filter:focus{border-color:#858980}.filter-label{font-size:11px;color:#858880;margin:0 3px 0 8px}.filter-reset{border:0;background:transparent;color:#747870;font-size:12px;text-decoration:underline;cursor:pointer;margin-left:auto}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.product{background:var(--paper);border:1px solid #ebebe8;border-radius:22px;overflow:hidden;transition:transform .3s,box-shadow .3s}.product:hover{transform:translateY(-6px);box-shadow:var(--shadow)}.product-img{height:225px;position:relative;overflow:hidden;background:#d5d6d1}.product-img img{width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(55%);transition:transform .6s}.product:hover .product-img img{transform:scale(1.055)}.product-tag{position:absolute;top:14px;left:14px;background:#f8f8f1e8;border-radius:99px;padding:7px 10px;font-size:10px;font-weight:700;letter-spacing:.04em}.product-body{padding:20px}.product-top{display:flex;justify-content:space-between;gap:10px;align-items:start}.product h3{font:700 19px Manrope;margin:0 0 7px}.product-sub{font-size:11px;color:var(--muted)}.price{text-align:right;white-space:nowrap;font:800 18px Manrope}.price small{display:block;color:var(--muted);font:400 10px "DM Sans";margin-top:2px}.specs{display:flex;gap:7px;flex-wrap:wrap;margin:17px 0}.spec{font-size:10px;color:#686c65;background:#f0f1ed;padding:7px 9px;border-radius:7px}.colors{display:flex;align-items:center;gap:7px;margin-bottom:18px}.swatch{width:15px;height:15px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px #d3d4ce}.color-note{font-size:10px;color:#8b8e87;margin-left:3px}.product-actions{display:flex;align-items:center;gap:9px}.add{flex:1;border:0;background:var(--dark);color:#fff;border-radius:999px;padding:12px 14px;font-size:11px;font-weight:700;cursor:pointer;transition:.2s}.add:hover{background:#4b4e47}.details{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:#fff;cursor:pointer;font-size:16px}
+.no-results{grid-column:1/-1;text-align:center;padding:55px 20px;color:var(--muted);background:#fff;border-radius:18px}
+.pattern{background:#292b28;color:#fff;padding:80px 0;overflow:hidden}.pattern-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:center}.pattern h2{font:800 clamp(30px,4vw,48px)/1.1 Manrope;letter-spacing:-.04em;margin:14px 0 18px}.pattern p{color:#b6b9b1;line-height:1.8;font-size:13px;max-width:390px}.pattern-art{height:310px;position:relative;display:grid;place-items:center;perspective:900px}.tile-stack{display:grid;grid-template-columns:repeat(4,78px);gap:8px;transform:rotateX(56deg) rotateZ(-31deg);transform-style:preserve-3d;animation:drift 6s ease-in-out infinite}.tile-stack span{height:78px;border-radius:7px;background:linear-gradient(145deg,#bfc1ba,#747870);box-shadow:10px 13px 0 #555850,15px 19px 20px #0005;animation:tilePulse 4s ease-in-out infinite}.tile-stack span:nth-child(3n){background:linear-gradient(145deg,#a4a79f,#62665e)}.tile-stack span:nth-child(2n){animation-delay:.3s}.tile-stack span:nth-child(4n){animation-delay:.7s}@keyframes drift{50%{transform:rotateX(56deg) rotateZ(-25deg) translateY(-10px)}}@keyframes tilePulse{50%{filter:brightness(1.17)}}
+.benefits{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:40px}.benefit{padding:24px 20px;background:#fff;border:1px solid var(--line);border-radius:18px}.benefit-icon{width:39px;height:39px;border-radius:12px;background:#eff0ec;display:grid;place-items:center;font-size:18px;margin-bottom:20px}.benefit h3{font:700 15px Manrope;margin:0 0 9px}.benefit p{font-size:11px;line-height:1.65;color:var(--muted);margin:0}
+.process{background:#e9eae6}.process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:35px}.step{border-top:1px solid #cfd1ca;padding-top:19px}.step-no{font:700 12px Manrope;color:#92958d}.step h3{font:700 18px Manrope;margin:17px 0 9px}.step p{font-size:12px;color:#777a73;line-height:1.7;margin:0;max-width:290px}
+.contact{padding:100px 0}.contact-card{background:#fff;border-radius:28px;padding:48px;display:grid;grid-template-columns:.9fr 1.1fr;gap:55px;box-shadow:0 12px 45px #20211f08}.contact-copy h2{font:800 clamp(30px,4vw,44px)/1.08 Manrope;letter-spacing:-.05em;margin:14px 0}.contact-copy p{color:var(--muted);font-size:13px;line-height:1.8;max-width:340px}.contact-info{margin-top:35px;display:grid;gap:13px;color:#555950;font-size:12px}.contact-info span{display:flex;gap:10px;align-items:center}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field{display:grid;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:10px;color:#777a73;font-weight:700}.field input,.field select,.field textarea{width:100%;border:1px solid #e5e6e1;background:#f8f8f6;border-radius:11px;padding:13px 14px;font-size:12px;outline:none;color:var(--ink)}.field input:focus,.field select:focus,.field textarea:focus{border-color:#888c83}.field textarea{min-height:88px;resize:vertical}.form-submit{grid-column:1/-1;display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:4px}.form-submit small{font-size:10px;color:#999c95}.success{display:none;grid-column:1/-1;padding:13px;border-radius:10px;background:#eef2eb;color:#45523f;font-size:12px}
+footer{background:#222420;color:#fff;padding:35px 0}.footer-row{display:flex;justify-content:space-between;align-items:center;gap:20px}.footer-copy{color:#a4a79f;font-size:11px}.footer-links{display:flex;gap:20px;color:#c4c6c0;font-size:11px}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:translateY(0)}
+.toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:#292b28;color:#fff;padding:13px 20px;border-radius:999px;font-size:12px;z-index:80;transition:.3s;box-shadow:0 8px 25px #0002}.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:900px){.hero-grid{gap:28px}.hero-visual{height:420px}.products{grid-template-columns:repeat(2,1fr)}.benefits{grid-template-columns:repeat(2,1fr)}.contact-card{gap:30px;padding:35px}.pattern-grid{gap:20px}}
+@media(max-width:650px){.wrap{width:min(100% - 30px,520px)}.nav{height:65px}.navlinks{display:none;position:absolute;top:65px;left:0;right:0;background:#f3f3f1;padding:20px 25px;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:18px}.navlinks.open{display:flex}.menu-btn{display:block}.brand{font-size:17px}.cart{padding:8px 12px}.hero{padding:43px 0 50px}.hero-grid{grid-template-columns:1fr;gap:30px}.hero h1{font-size:46px}.hero p{font-size:14px}.hero-visual{height:330px;border-radius:22px}.scroll-brick{top:76px;left:12px;font-size:30px}.stats{padding:18px 0}.stat{gap:7px;flex-direction:column;text-align:center}.stat strong{font-size:21px}.stat span{font-size:9px}.section{padding:70px 0}.section-head{display:block}.section-intro{margin-top:15px}.filters{gap:8px;padding:12px}.filter-label{width:100%;margin:3px 0 0}.filter{flex:1;min-width:0}.filter-reset{margin-left:0}.products{grid-template-columns:1fr;gap:14px}.product-img{height:230px}.pattern{padding:65px 0}.pattern-grid{grid-template-columns:1fr;gap:5px}.pattern-art{height:230px}.tile-stack{grid-template-columns:repeat(4,57px);gap:7px}.tile-stack span{height:57px}.benefits{grid-template-columns:1fr 1fr;gap:10px}.benefit{padding:18px 14px}.benefit h3{font-size:13px}.benefit p{font-size:10px}.process-grid{grid-template-columns:1fr;gap:25px}.contact{padding:65px 0}.contact-card{grid-template-columns:1fr;padding:27px 20px;gap:25px;border-radius:22px}.form-grid{grid-template-columns:1fr}.field.full,.form-submit,.success{grid-column:1}.footer-row{align-items:flex-start;flex-direction:column}.footer-links{flex-wrap:wrap}.hero-note{margin-top:25px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="topline"></div>
+<div class="scroll-brick" id="scrollBrick" aria-hidden="true">◻️</div>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home"><span class="brand-mark">T</span> TERRA CERAMICA</a>
+    <nav class="navlinks" id="navlinks"><a href="#catalog">Каталог</a><a href="#about">Переваги</a><a href="#process">Як замовити</a><a href="#contacts">Контакти</a></nav>
+    <div class="navright"><button class="cart" id="cartButton">Кошик <b id="cartCount">0</b></button><button class="menu-btn" id="menuBtn" aria-label="Відкрити меню">☰</button></div>
+  </div>
+</header>
+<main id="home">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <div class="eyebrow">Кераміка для особливих просторів</div>
+      <h1>Плитка, що <span>створює</span> атмосферу.</h1>
+      <p>Колекції керамограніту та керамічної плитки для ванної, кухні й вітальні. Натуральні фактури, спокійні відтінки та дизайн, який не набридає.</p>
+      <a class="btn" href="#catalog">Переглянути каталог <span class="arrow">↘</span></a>
+      <div class="hero-note"><div class="avatars"><i></i><i></i><i></i></div><span>Для ванних кімнат, кухонь і сучасних інтер’єрів</span></div>
+    </div>
+    <div class="hero-visual reveal">
+      <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85" alt="Сучасне мощення подвір'я бруківкою" onerror="this.src='https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=85'">
+      <div class="visual-index">01 / 04 — НАША ФІЛОСОФІЯ</div>
+      <div class="visual-caption"><small>FORM FOLLOWS FUNCTION</small><strong>Краса у кожній деталі.</strong></div>
+    </div>
+  </div>
+</section>
+<div class="stats"><div class="wrap stats-grid">
+  <div class="stat"><strong>12</strong><span>авторських колекцій плитки</span></div>
+  <div class="stat"><strong>24/7</strong><span>прийом заявок онлайн</span></div>
+  <div class="stat"><strong>100%</strong><span>уваги до деталей</span></div>
+</div></div>
+
+<section class="section" id="catalog">
+ <div class="wrap">
+  <div class="section-head reveal"><div><div class="kicker">Колекції TERRA CERAMICA</div><h2>Знайди плитку<br>для свого простору.</h2></div><p class="section-intro">Обирай між фактурою каменю, мармуру, бетону та дерева. Плитка для стильного й практичного інтер’єру.</p></div>
+  <div class="filters reveal">
+    <span class="filter-label">Стиль</span>
+    <select class="filter" id="shapeFilter"><option value="all">Усі стилі</option><option value="rect">Під камінь</option><option value="mix">Під мармур</option><option value="square">Під бетон</option></select>
+    <span class="filter-label">Формат</span>
+    <select class="filter" id="thickFilter"><option value="all">Будь-який</option><option value="40">60×60</option><option value="60">60×120</option><option value="80">30×60</option></select>
+    <span class="filter-label">Ціна до</span>
+    <select class="filter" id="priceFilter"><option value="all">Без обмежень</option><option value="500">500 ₴/м²</option><option value="650">650 ₴/м²</option><option value="800">800 ₴/м²</option></select>
+    <button class="filter-reset" id="resetFilters">Скинути фільтри ↺</button>
+  </div>
+  <div class="products" id="products">
+   <article class="product reveal" data-shape="mix" data-thick="60" data-price="590">
+    <div class="product-img"><img loading="lazy" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85" alt="Stone Greyівка Calacatta White, сірий мікс"><span class="product-tag">ХІТ ПРОДАЖУ</span></div>
+    <div class="product-body"><div class="product-top"><div><h3>Calacatta White</h3><div class="product-sub">Мармурова елегантність</div></div><div class="price">590 ₴<small>за м² · демоціна</small></div></div><div class="specs"><span class="spec">Формат 60×120</span><span class="spec">Керамограніт</span></div><div class="colors"><i class="swatch" style="background:#999b96"></i><i class="swatch" style="background:#555852"></i><i class="swatch" style="background:#b7a99a"></i><span class="color-note">Сірий · Графіт · Капучино</span></div><div class="product-actions"><button class="add" data-name="Calacatta White">Додати до кошика ↗</button><button class="details" aria-label="Детальніше про Calacatta White">＋</button></div></div>
+   </article>
+   <article class="product reveal" data-shape="rect" data-thick="60" data-price="540">
+    <div class="product-img"><img loading="lazy" src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=85" alt="Під камінь тротуарна плитка Stone Grey"><span class="product-tag">УНІВЕРСАЛЬНА</span></div>
+    <div class="product-body"><div class="product-top"><div><h3>Stone Grey</h3><div class="product-sub">Натуральний камінь</div></div><div class="price">540 ₴<small>за м² · демоціна</small></div></div><div class="specs"><span class="spec">Формат 60×120</span><span class="spec">Керамограніт</span></div><div class="colors"><i class="swatch" style="background:#a7a9a2"></i><i class="swatch" style="background:#555750"></i><i class="swatch" style="background:#c5c1b8"></i><span class="color-note">Сірий · Антрацит · Білий</span></div><div class="product-actions"><button class="add" data-name="Stone Grey">Додати до кошика ↗</button><button class="details" aria-label="Детальніше про Stone Grey">＋</button></div></div>
+   </article>
+   <article class="product reveal" data-shape="square" data-thick="40" data-price="460">
+    <div class="product-img"><img loading="lazy" src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=1200&q=85" alt="Під бетон плитка Concrete Soft"><span class="product-tag">ДЛЯ ТЕРАСИ</span></div>
+    <div class="product-body"><div class="product-top"><div><h3>Concrete Soft</h3><div class="product-sub">Лаконічна фактура бетону</div></div><div class="price">460 ₴<small>за м² · демоціна</small></div></div><div class="specs"><span class="spec">Формат 60×60</span><span class="spec">Кераміка</span></div><div class="colors"><i class="swatch" style="background:#c0c1bb"></i><i class="swatch" style="background:#858982"></i><i class="swatch" style="background:#b3a99b"></i><span class="color-note">Світлий · Сірий · Пісок</span></div><div class="product-actions"><button class="add" data-name="Concrete Soft">Додати до кошика ↗</button><button class="details" aria-label="Детальніше про Concrete Soft">＋</button></div></div>
+   </article>
+   <article class="product reveal" data-shape="rect" data-thick="80" data-price="760">
+    <div class="product-img"><img loading="lazy" src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1200&q=85" alt="Посилена бруківка Урбан"><span class="product-tag">ПІД НАВАНТАЖЕННЯ</span></div>
+    <div class="product-body"><div class="product-top"><div><h3>Travertine Sand</h3><div class="product-sub">Теплий природний відтінок</div></div><div class="price">760 ₴<small>за м² · демоціна</small></div></div><div class="specs"><span class="spec">Формат 30×60</span><span class="spec">Керамограніт</span></div><div class="colors"><i class="swatch" style="background:#6f726c"></i><i class="swatch" style="background:#454842"></i><span class="color-note">Графіт · Антрацит</span></div><div class="product-actions"><button class="add" data-name="Travertine Sand">Додати до кошика ↗</button><button class="details" aria-label="Детальніше про Travertine Sand">＋</button></div></div>
+   </article>
+   <article class="product reveal" data-shape="mix" data-thick="60" data-price="620">
+    <div class="product-img"><img loading="lazy" src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1200&q=85" alt="Stone Greyівка Marble Cloud"><span class="product-tag">ТЕКСТУРНА</span></div>
+    <div class="product-body"><div class="product-top"><div><h3>Marble Cloud</h3><div class="product-sub">Делікатний мармуровий малюнок</div></div><div class="price">620 ₴<small>за м² · демоціна</small></div></div><div class="specs"><span class="spec">Формат 60×120</span><span class="spec">Матова поверхня</span></div><div class="colors"><i class="swatch" style="background:#aaa69d"></i><i class="swatch" style="background:#77766e"></i><i class="swatch" style="background:#a18b76"></i><span class="color-note">Мокрий асфальт · Пісок · Кава</span></div><div class="product-actions"><button class="add" data-name="Marble Cloud">Додати до кошика ↗</button><button class="details" aria-label="Детальніше про Marble Cloud">＋</button></div></div>
+   </article>
+   <article class="product reveal" data-shape="square" data-thick="60" data-price="650">
+    <div class="product-img"><img loading="lazy" src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=900&q=80" alt="Великий формат Nordic Ash"><span class="product-tag">СУЧАСНИЙ ФОРМАТ</span></div>
+    <div class="product-body"><div class="product-top"><div><h3>Nordic Ash</h3><div class="product-sub">Фактура світлого дерева</div></div><div class="price">650 ₴<small>за м² · демоціна</small></div></div><div class="specs"><span class="spec">Формат 60×120</span><span class="spec">Керамограніт</span></div><div class="colors"><i class="swatch" style="background:#c5c6c0"></i><i class="swatch" style="background:#888c84"></i><span class="color-note">Світло-сірий · Камінь</span></div><div class="product-actions"><button class="add" data-name="Nordic Ash">Додати до кошика ↗</button><button class="details" aria-label="Детальніше про Nordic Ash">＋</button></div></div>
+   </article>
+  </div>
+ </div>
+</section>
+
+<section class="pattern" id="about">
+ <div class="wrap pattern-grid">
+  <div class="reveal"><div class="kicker" style="color:#aeb1a9">Більше, ніж покриття</div><h2>Текстура.<br>Світло. Гармонія.</h2><p>Плитка формує характер інтер’єру. Поєднуй фактури, формати й відтінки, щоб створити затишний простір, який відображає твій стиль.</p><a href="#contacts" class="btn" style="background:#f4f4f0;color:#292b28;margin-top:12px">Підібрати плитку <span class="arrow">↗</span></a></div>
+  <div class="pattern-art reveal" aria-label="Анімована композиція з плиток"><div class="tile-stack"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
+ </div>
+</section>
+
+<section class="section">
+ <div class="wrap">
+  <div class="section-head reveal"><div><div class="kicker">Чому TERRA CERAMICA</div><h2>Продумано<br>до дрібниць.</h2></div><p class="section-intro">Від першої ідеї до останньої деталі — допомагаємо знайти ідеальну плитку для твого ремонту.</p></div>
+  <div class="benefits">
+   <div class="benefit reveal"><div class="benefit-icon">▧</div><h3>Якість матеріалів</h3><p>Практичні матеріали для щоденного використання в інтер’єрі.</p></div>
+   <div class="benefit reveal"><div class="benefit-icon">⌁</div><h3>Сучасний дизайн</h3><p>Фактури мармуру, каменю та бетону в сучасному виконанні.</p></div>
+   <div class="benefit reveal"><div class="benefit-icon">↗</div><h3>Зручна доставка</h3><p>Узгодимо спосіб та терміни доставки на об'єкт.</p></div>
+   <div class="benefit reveal"><div class="benefit-icon">✓</div><h3>Гарантія якості</h3><p>Надаємо інформацію про характеристики та умови гарантії на обраний товар.</p></div>
+  </div>
+ </div>
+</section>
+<section class="section process" id="process">
+ <div class="wrap"><div class="kicker reveal">Просто та зрозуміло</div><h2 class="reveal">Від ідеї до затишного дому.</h2>
+  <div class="process-grid">
+   <div class="step reveal"><span class="step-no">01 / ЗАПИТ</span><h3>Розкажи про проєкт</h3><p>Залиш заявку та вкажи площу, тип приміщення і побажання щодо стилю.</p></div>
+   <div class="step reveal"><span class="step-no">02 / ПІДБІР</span><h3>Отримай розрахунок</h3><p>Підберемо колекцію, формат та допоможемо розрахувати потрібну кількість.</p></div>
+   <div class="step reveal"><span class="step-no">03 / РЕЗУЛЬТАТ</span><h3>Узгодь доставку</h3><p>Підтвердимо наявність, терміни та деталі замовлення перед відправленням.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="contact" id="contacts">
+ <div class="wrap contact-card reveal">
+  <div class="contact-copy"><div class="kicker">Є задум? Обговорімо.</div><h2>Підберемо<br>твою плитку.</h2><p>Розкажи про свій інтер’єр — підберемо колекцію та орієнтовно розрахуємо вартість.</p><div class="contact-info"><span>✉ &nbsp; hello@terraceramica.example</span><span>☎ &nbsp; +38 (0XX) XXX XX XX</span><span>⌖ &nbsp; Зручна доставка по Україні</span></div></div>
+  <form id="leadForm" class="form-grid">
+   <div class="field"><label for="name">ТВОЄ ІМ'Я</label><input id="name" name="name" placeholder="Як до тебе звертатись?" required></div>
+   <div class="field"><label for="phone">ТЕЛЕФОН</label><input id="phone" name="phone" type="tel" placeholder="+38 (0__) ___ __ __" required></div>
+   <div class="field"><label for="area">ПЛОЩА, ПРИБЛИЗНО</label><input id="area" name="area" type="number" min="1" placeholder="Наприклад, 80 м²"></div>
+   <div class="field"><label for="purpose">ДЛЯ ЯКОГО ПРИМІЩЕННЯ?</label><select id="purpose" name="purpose"><option>Ванна кімната</option><option>Кухня</option><option>Передпокій</option><option>Вітальня</option><option>Інше</option></select></div>
+   <div class="field full"><label for="message">КОМЕНТАР (НЕОБОВ'ЯЗКОВО)</label><textarea id="message" name="message" placeholder="Побажання щодо кольору, фактури або доставки..."></textarea></div>
+   <div class="form-submit"><button class="btn" type="submit">Надіслати заявку <span class="arrow">↗</span></button><small>Натискаючи кнопку, ти погоджуєшся на обробку контактних даних.</small></div>
+   <div class="success" id="successMsg">Дякуємо! Це демо-форма: підключи її до пошти або CRM, щоб заявки надходили власнику магазину.</div>
+  </form>
+ </div>
+</section>
+</main>
+<footer><div class="wrap footer-row"><a class="brand" href="#home"><span class="brand-mark">T</span> TERRA CERAMICA</a><div class="footer-copy">© 2026 TERRA CERAMICA. Дизайн починається з деталей.</div><div class="footer-links"><a href="#catalog">Каталог</a><a href="#contacts">Зв'язатися</a><a href="#home">На початок ↑</a></div></div></footer>
+<div class="toast" id="toast">Додано до кошика</div>
+<script>
+const brick=document.getElementById('scrollBrick');
+let scrollTick=false;
+function updateBrick(){const max=Math.max(1,document.documentElement.scrollHeight-innerHeight);const p=Math.min(1,Math.max(0,scrollY/max));const angle=p*720;const scale=1-p*.58;brick.style.transform=`translate(${p*min( Math.max(0,innerWidth-100), 80)}px, ${p*8}px) rotate(${angle}deg) scale(${scale})`;scrollTick=false}
+function min(a,b){return Math.min(a,b)}
+addEventListener('scroll',()=>{if(!scrollTick){requestAnimationFrame(updateBrick);scrollTick=true}},{passive:true});addEventListener('resize',updateBrick);updateBrick();
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+const shape=document.getElementById('shapeFilter'),thick=document.getElementById('thickFilter'),price=document.getElementById('priceFilter');
+function filterProducts(){let shown=0;document.querySelectorAll('.product').forEach(card=>{const ok=(shape.value==='all'||card.dataset.shape===shape.value)&&(thick.value==='all'||card.dataset.thick===thick.value)&&(price.value==='all'||Number(card.dataset.price)<=Number(price.value));card.style.display=ok?'':'none';if(ok)shown++});let empty=document.querySelector('.no-results');if(!shown&&!empty){empty=document.createElement('div');empty.className='no-results';empty.textContent='За цими параметрами нічого не знайдено. Спробуй змінити фільтри.';document.getElementById('products').append(empty)}else if(shown&&empty)empty.remove()}
+[shape,thick,price].forEach(el=>el.addEventListener('change',filterProducts));document.getElementById('resetFilters').addEventListener('click',()=>{shape.value=thick.value=price.value='all';filterProducts()});
+let cart=[];const count=document.getElementById('cartCount'),toast=document.getElementById('toast');let toastTimer;
+function showToast(t){toast.textContent=t;toast.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>toast.classList.remove('show'),2100)}
+document.querySelectorAll('.add').forEach(btn=>btn.addEventListener('click',()=>{cart.push(btn.dataset.name);count.textContent=cart.length;showToast(`${btn.dataset.name} додано до кошика`)}));
+document.getElementById('cartButton').addEventListener('click',()=>showToast(cart.length?`У кошику: ${cart.join(', ')}`:'Кошик поки порожній'));
+document.querySelectorAll('.details').forEach(btn=>btn.addEventListener('click',()=>{const card=btn.closest('.product');showToast(`${card.querySelector('h3').textContent} · ${card.dataset.thick==='40'?'60×60':card.dataset.thick==='60'?'60×120':'30×60'} · ${card.dataset.price} ₴/м²`)}));
+document.getElementById('leadForm').addEventListener('submit',e=>{e.preventDefault();document.getElementById('successMsg').style.display='block';e.target.reset()});
+document.getElementById('menuBtn').addEventListener('click',()=>document.getElementById('navlinks').classList.toggle('open'));document.querySelectorAll('.navlinks a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navlinks').classList.remove('open')));
+</script>
+</body>
+</html>
